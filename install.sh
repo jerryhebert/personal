@@ -15,3 +15,10 @@ for rc_file in ${rc_files[*]}; do
     echo "Installed $rc_file"
 done
 
+if [[ ! -d "$HOME/.vim" ]]; then
+    mkdir "$HOME/.vim"
+fi
+
+git clone https://github.com/VundleVim/Vundle.vim.git "$HOME/.vim/bundle/Vundle.vim"
+
+
