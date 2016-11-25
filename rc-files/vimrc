@@ -464,7 +464,7 @@ autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
 cnoreabbrev tree NERDTree
 cnoreabbrev blame Gblame
 
-autocmd VimEnter * RainbowToggleOn
+autocmd VimEnter * RainbowToggle
 
 let vimclojure#FuzzyIndent=1
 " Automatically determine indenting using fuzzy matching. e.g. the a line starting "(with-"
